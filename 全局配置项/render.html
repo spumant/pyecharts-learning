@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="91d091b59918425991a04ccc28f19d1d" class="chart-container" style="width:700px; height:400px; "></div>
+    <div id="7af84b8c5578438498a0ccce09328d96" class="chart-container" style="width:700px; height:400px; "></div>
     <script>
-        var chart_91d091b59918425991a04ccc28f19d1d = echarts.init(
-            document.getElementById('91d091b59918425991a04ccc28f19d1d'), 'light', {renderer: 'canvas'});
-        var option_91d091b59918425991a04ccc28f19d1d = {
+        var chart_7af84b8c5578438498a0ccce09328d96 = echarts.init(
+            document.getElementById('7af84b8c5578438498a0ccce09328d96'), 'light', {renderer: 'canvas'});
+        var option_7af84b8c5578438498a0ccce09328d96 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -26,67 +26,155 @@
     },
     "series": [
         {
-            "type": "bar",
+            "type": "line",
             "name": "\u5546\u5bb6A",
-            "legendHoverLink": true,
-            "data": [
-                123,
-                45,
-                118,
-                150,
-                28,
-                108,
-                116
-            ],
-            "realtimeSort": false,
-            "showBackground": false,
-            "stackStrategy": "samesign",
-            "cursor": "pointer",
-            "barMinHeight": 0,
-            "barCategoryGap": "20%",
-            "barGap": "30%",
-            "large": false,
-            "largeThreshold": 400,
-            "seriesLayoutBy": "column",
-            "datasetIndex": 0,
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
             "clip": true,
-            "zlevel": 0,
-            "z": 2,
+            "step": false,
+            "data": [
+                [
+                    "\u53ef\u4e50",
+                    30
+                ],
+                [
+                    "\u96ea\u78a7",
+                    66
+                ],
+                [
+                    "\u6a59\u6c41",
+                    90
+                ],
+                [
+                    "\u7eff\u8336",
+                    56
+                ],
+                [
+                    "\u5976\u8336",
+                    73
+                ],
+                [
+                    "\u767e\u5a01",
+                    27
+                ],
+                [
+                    "\u9752\u5c9b",
+                    102
+                ]
+            ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
-                "margin": 8
+                "color": "red",
+                "margin": 8,
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "fontFamily": "Arial"
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "dashed",
+                "color": "green"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "itemStyle": {
+                "color": "blue",
+                "opacity": 0.8
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         },
         {
-            "type": "bar",
+            "type": "line",
             "name": "\u5546\u5bb6B",
-            "legendHoverLink": true,
-            "data": [
-                38,
-                136,
-                62,
-                28,
-                70,
-                136,
-                98
-            ],
-            "realtimeSort": false,
-            "showBackground": false,
-            "stackStrategy": "samesign",
-            "cursor": "pointer",
-            "barMinHeight": 0,
-            "barCategoryGap": "20%",
-            "barGap": "30%",
-            "large": false,
-            "largeThreshold": 400,
-            "seriesLayoutBy": "column",
-            "datasetIndex": 0,
+            "connectNulls": false,
+            "xAxisIndex": 0,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
             "clip": true,
-            "zlevel": 0,
-            "z": 2,
+            "step": false,
+            "data": [
+                [
+                    "\u53ef\u4e50",
+                    130
+                ],
+                [
+                    "\u96ea\u78a7",
+                    56
+                ],
+                [
+                    "\u6a59\u6c41",
+                    107
+                ],
+                [
+                    "\u7eff\u8336",
+                    70
+                ],
+                [
+                    "\u5976\u8336",
+                    121
+                ],
+                [
+                    "\u767e\u5a01",
+                    117
+                ],
+                [
+                    "\u9752\u5c9b",
+                    73
+                ]
+            ],
+            "hoverAnimation": true,
             "label": {
                 "show": true,
-                "margin": 8
+                "color": "red",
+                "margin": 8,
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "fontFamily": "Arial"
+            },
+            "logBase": 10,
+            "seriesLayoutBy": "column",
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "dashed",
+                "color": "green"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "itemStyle": {
+                "color": "blue",
+                "opacity": 0.8
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
             }
         }
     ],
@@ -121,7 +209,7 @@
     ],
     "tooltip": {
         "show": true,
-        "trigger": "item",
+        "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
             "type": "line"
@@ -143,7 +231,6 @@
     },
     "xAxis": [
         {
-            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -164,13 +251,13 @@
                 }
             },
             "data": [
-                "\u5c0f\u7c73",
-                "\u4e09\u661f",
-                "\u534e\u4e3a",
-                "\u82f9\u679c",
-                "\u9b45\u65cf",
-                "VIVO",
-                "OPPO"
+                "\u53ef\u4e50",
+                "\u96ea\u78a7",
+                "\u6a59\u6c41",
+                "\u7eff\u8336",
+                "\u5976\u8336",
+                "\u767e\u5a01",
+                "\u9752\u5c9b"
             ]
         }
     ],
@@ -181,16 +268,6 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
-            "axisLine": {
-                "show": false,
-                "onZero": true,
-                "onZeroAxisIndex": 0
-            },
-            "axisTick": {
-                "show": false,
-                "alignWithLabel": false,
-                "inside": false
-            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
@@ -210,6 +287,7 @@
     "title": [
         {
             "show": true,
+            "text": "\u6298\u7ebf\u56fe",
             "target": "blank",
             "subtarget": "blank",
             "padding": 5,
@@ -220,7 +298,7 @@
         }
     ]
 };
-        chart_91d091b59918425991a04ccc28f19d1d.setOption(option_91d091b59918425991a04ccc28f19d1d);
+        chart_7af84b8c5578438498a0ccce09328d96.setOption(option_7af84b8c5578438498a0ccce09328d96);
     </script>
 </body>
 </html>
