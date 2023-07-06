@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="131ab62b406e41d78a53749a392ac00d" class="chart-container" style="width:700px; height:400px; "></div>
+    <div id="b99fc3436f1245989f3937a99c2fd177" class="chart-container" style="width:700px; height:400px; "></div>
     <script>
-        var chart_131ab62b406e41d78a53749a392ac00d = echarts.init(
-            document.getElementById('131ab62b406e41d78a53749a392ac00d'), 'light', {renderer: 'canvas'});
-        var option_131ab62b406e41d78a53749a392ac00d = {
+        var chart_b99fc3436f1245989f3937a99c2fd177 = echarts.init(
+            document.getElementById('b99fc3436f1245989f3937a99c2fd177'), 'light', {renderer: 'canvas'});
+        var option_b99fc3436f1245989f3937a99c2fd177 = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -30,13 +30,13 @@
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                64,
-                101,
-                71,
-                109,
-                36,
-                134,
-                35
+                62,
+                72,
+                96,
+                129,
+                120,
+                81,
+                128
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -62,13 +62,13 @@
             "name": "\u5546\u5bb6B",
             "legendHoverLink": true,
             "data": [
-                78,
-                111,
-                20,
+                86,
                 54,
-                106,
-                43,
-                68
+                119,
+                99,
+                88,
+                115,
+                90
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -116,16 +116,12 @@
             "selector": false,
             "selectorPosition": "auto",
             "selectorItemGap": 7,
-            "selectorButtonGap": 10,
-            "type": "scroll",
-            "orient": "vertical",
-            "align": "right",
-            "icon": "circle"
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
         "show": true,
-        "trigger": "item",
+        "trigger": "axis",
         "triggerOn": "mousemove|click",
         "axisPointer": {
             "type": "line"
@@ -138,10 +134,12 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
+        "formatter": "{a}:{b}-{c}",
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0,
+        "borderColor": "white",
+        "borderWidth": 1,
         "padding": 5,
         "order": "seriesAsc"
     },
@@ -167,13 +165,13 @@
                 }
             },
             "data": [
-                "\u54c8\u58eb\u5947",
-                "\u8428\u6469\u8036",
-                "\u6cf0\u8fea",
-                "\u91d1\u6bdb",
-                "\u7267\u7f8a\u72ac",
-                "\u5409\u5a03\u5a03",
-                "\u67ef\u57fa"
+                "\u8349\u8393",
+                "\u8292\u679c",
+                "\u8461\u8404",
+                "\u96ea\u68a8",
+                "\u897f\u74dc",
+                "\u67e0\u6aac",
+                "\u8f66\u5398\u5b50"
             ]
         }
     ],
@@ -211,9 +209,37 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
-    ]
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "piecewise",
+        "min": 0,
+        "max": 150,
+        "text": [
+            "max",
+            "min"
+        ],
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ],
+            "opacity": 0.8
+        },
+        "calculable": true,
+        "inverse": true,
+        "splitNumber": 5,
+        "hoverLink": true,
+        "orient": "vertical",
+        "padding": 5,
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 14,
+        "borderWidth": 0
+    }
 };
-        chart_131ab62b406e41d78a53749a392ac00d.setOption(option_131ab62b406e41d78a53749a392ac00d);
+        chart_b99fc3436f1245989f3937a99c2fd177.setOption(option_b99fc3436f1245989f3937a99c2fd177);
     </script>
 </body>
 </html>
