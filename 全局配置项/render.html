@@ -7,11 +7,11 @@
 
 </head>
 <body >
-    <div id="b99fc3436f1245989f3937a99c2fd177" class="chart-container" style="width:700px; height:400px; "></div>
+    <div id="91d091b59918425991a04ccc28f19d1d" class="chart-container" style="width:700px; height:400px; "></div>
     <script>
-        var chart_b99fc3436f1245989f3937a99c2fd177 = echarts.init(
-            document.getElementById('b99fc3436f1245989f3937a99c2fd177'), 'light', {renderer: 'canvas'});
-        var option_b99fc3436f1245989f3937a99c2fd177 = {
+        var chart_91d091b59918425991a04ccc28f19d1d = echarts.init(
+            document.getElementById('91d091b59918425991a04ccc28f19d1d'), 'light', {renderer: 'canvas'});
+        var option_91d091b59918425991a04ccc28f19d1d = {
     "backgroundColor": "white",
     "animation": true,
     "animationThreshold": 2000,
@@ -30,13 +30,13 @@
             "name": "\u5546\u5bb6A",
             "legendHoverLink": true,
             "data": [
-                62,
-                72,
-                96,
-                129,
-                120,
-                81,
-                128
+                123,
+                45,
+                118,
+                150,
+                28,
+                108,
+                116
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -62,13 +62,13 @@
             "name": "\u5546\u5bb6B",
             "legendHoverLink": true,
             "data": [
-                86,
-                54,
-                119,
-                99,
-                88,
-                115,
-                90
+                38,
+                136,
+                62,
+                28,
+                70,
+                136,
+                98
             ],
             "realtimeSort": false,
             "showBackground": false,
@@ -121,7 +121,7 @@
     ],
     "tooltip": {
         "show": true,
-        "trigger": "axis",
+        "trigger": "item",
         "triggerOn": "mousemove|click",
         "axisPointer": {
             "type": "line"
@@ -134,17 +134,16 @@
         "confine": false,
         "appendToBody": false,
         "transitionDuration": 0.4,
-        "formatter": "{a}:{b}-{c}",
         "textStyle": {
             "fontSize": 14
         },
-        "borderColor": "white",
-        "borderWidth": 1,
+        "borderWidth": 0,
         "padding": 5,
         "order": "seriesAsc"
     },
     "xAxis": [
         {
+            "type": "category",
             "show": true,
             "scale": false,
             "nameLocation": "end",
@@ -155,7 +154,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -165,13 +164,13 @@
                 }
             },
             "data": [
-                "\u8349\u8393",
-                "\u8292\u679c",
-                "\u8461\u8404",
-                "\u96ea\u68a8",
-                "\u897f\u74dc",
-                "\u67e0\u6aac",
-                "\u8f66\u5398\u5b50"
+                "\u5c0f\u7c73",
+                "\u4e09\u661f",
+                "\u534e\u4e3a",
+                "\u82f9\u679c",
+                "\u9b45\u65cf",
+                "VIVO",
+                "OPPO"
             ]
         }
     ],
@@ -182,12 +181,22 @@
             "nameLocation": "end",
             "nameGap": 15,
             "gridIndex": 0,
+            "axisLine": {
+                "show": false,
+                "onZero": true,
+                "onZeroAxisIndex": 0
+            },
+            "axisTick": {
+                "show": false,
+                "alignWithLabel": false,
+                "inside": false
+            },
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -209,37 +218,9 @@
             "textVerticalAlign": "auto",
             "triggerEvent": false
         }
-    ],
-    "visualMap": {
-        "show": true,
-        "type": "piecewise",
-        "min": 0,
-        "max": 150,
-        "text": [
-            "max",
-            "min"
-        ],
-        "inRange": {
-            "color": [
-                "#50a3ba",
-                "#eac763",
-                "#d94e5d"
-            ],
-            "opacity": 0.8
-        },
-        "calculable": true,
-        "inverse": true,
-        "splitNumber": 5,
-        "hoverLink": true,
-        "orient": "vertical",
-        "padding": 5,
-        "showLabel": true,
-        "itemWidth": 20,
-        "itemHeight": 14,
-        "borderWidth": 0
-    }
+    ]
 };
-        chart_b99fc3436f1245989f3937a99c2fd177.setOption(option_b99fc3436f1245989f3937a99c2fd177);
+        chart_91d091b59918425991a04ccc28f19d1d.setOption(option_91d091b59918425991a04ccc28f19d1d);
     </script>
 </body>
 </html>
